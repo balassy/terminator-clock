@@ -134,7 +134,7 @@ class SignIn extends Component<SignInProps, SignInState> {
             />
             <Fab variant="extended" color="primary" className={classes.button} type="submit" disabled={processing}>
               <ForwardIcon className={classes.extendedIcon} />
-              Sign In
+              Enter Skynet
             </Fab>
           </ValidatorForm>
         </Paper>
