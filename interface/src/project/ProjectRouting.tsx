@@ -5,6 +5,8 @@ import { PROJECT_PATH } from '../api';
 import { AuthenticatedRoute } from '../authentication';
 
 import DemoProject from './DemoProject';
+import AlarmSoundsPageComponent  from './AlarmSoundsPage.component';
+import CalibrationPageComponent  from './CalibrationPage.component';
 
 class ProjectRouting extends Component {
 
@@ -16,6 +18,8 @@ class ProjectRouting extends Component {
           * Add your project page routing below.
           */
         }
+        <AuthenticatedRoute exact path={`/${PROJECT_PATH}/alarm/*`} component={AlarmSoundsPageComponent} />
+        <AuthenticatedRoute exact path={`/${PROJECT_PATH}/calibration/*`} component={CalibrationPageComponent} />
         <AuthenticatedRoute exact path={`/${PROJECT_PATH}/demo/*`} component={DemoProject} />
         {
           /*
@@ -23,7 +27,7 @@ class ProjectRouting extends Component {
           * The "to" property must match one of the routes above for this to work correctly.
           */
         }
-        <Redirect to={`/${PROJECT_PATH}/demo/`} />
+        <Redirect to={`/${PROJECT_PATH}/alarm/`} />
       </Switch>
     )
   }
