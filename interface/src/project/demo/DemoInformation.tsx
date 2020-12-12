@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Typography, Box, List, ListItem, ListItemText } from '@material-ui/core';
-import { SectionContent } from '../components';
+import { SectionContent } from '../../components';
 
 class DemoInformation extends Component {
 
@@ -18,7 +18,7 @@ class DemoInformation extends Component {
         </Typography>
         <Typography variant="body1" paragraph>
           The demo project interface code is stored in the 'interface/src/project' directory:
-        </Typography>        
+        </Typography>
         <List>
           <ListItem>
             <ListItemText

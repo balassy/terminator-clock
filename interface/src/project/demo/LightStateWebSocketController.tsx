@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { ValidatorForm } from 'react-material-ui-form-validator';
 
 import { Typography, Box, Switch } from '@material-ui/core';
-import { WEB_SOCKET_ROOT } from '../api';
-import { WebSocketControllerProps, WebSocketFormLoader, WebSocketFormProps, webSocketController } from '../components';
-import { SectionContent, BlockFormControlLabel } from '../components';
+import { WEB_SOCKET_ROOT } from '../../api';
+import { WebSocketControllerProps, WebSocketFormLoader, WebSocketFormProps, webSocketController } from '../../components';
+import { SectionContent, BlockFormControlLabel } from '../../components';
 
 import { LightState } from './types';
 

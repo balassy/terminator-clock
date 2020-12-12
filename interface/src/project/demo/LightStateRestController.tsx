@@ -4,8 +4,8 @@ import { ValidatorForm } from 'react-material-ui-form-validator';
 import { Typography, Box, Checkbox } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
 
-import { ENDPOINT_ROOT } from '../api';
-import { restController, RestControllerProps, RestFormLoader, RestFormProps, FormActions, FormButton, SectionContent, BlockFormControlLabel } from '../components';
+import { ENDPOINT_ROOT } from '../../api';
+import { restController, RestControllerProps, RestFormLoader, RestFormProps, FormActions, FormButton, SectionContent, BlockFormControlLabel } from '../../components';
 
 import { LightState } from './types';
 

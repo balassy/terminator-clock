@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
-import { MenuAppBar, SectionContent } from '../components';
+import { MenuAppBar, SectionContent } from '../../components';
 
-class AlarmSoundsPageComponent extends Component {
+export class CalibrationPageComponent extends Component {
   render() {
     return (
-      <MenuAppBar sectionTitle="Alarms and Sounds">
-        <SectionContent title='Alarms and Sounds' titleGutter>
+      <MenuAppBar sectionTitle="Calibration">
+        <SectionContent title='Calibration' titleGutter>
           <Typography variant='body1' paragraph>
             Coming soon...
           </Typography>
@@ -16,4 +16,3 @@ class AlarmSoundsPageComponent extends Component {
   }
 }
 
-export default AlarmSoundsPageComponent;

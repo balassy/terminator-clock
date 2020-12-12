@@ -3,9 +3,9 @@ import { Redirect, Switch, RouteComponentProps } from 'react-router-dom'
 
 import { Tabs, Tab } from '@material-ui/core';
 
-import { PROJECT_PATH } from '../api';
-import { MenuAppBar } from '../components';
-import { AuthenticatedRoute } from '../authentication';
+import { PROJECT_PATH } from '../../api';
+import { MenuAppBar } from '../../components';
+import { AuthenticatedRoute } from '../../authentication';
 
 import DemoInformation from './DemoInformation';
 import LightStateRestController from './LightStateRestController';
