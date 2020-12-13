@@ -3,6 +3,7 @@
 #include <LightStateService.h>
 
 #include "sounds/SoundsStateService.h"
+#include "play/PlayStateService.h"
 
 #define SERIAL_BAUD_RATE 115200
 
@@ -19,6 +20,8 @@ SoundsStateService soundsStateService = SoundsStateService(&server,
                                                            esp8266React.getSecurityManager(),
                                                            esp8266React.getFS());
 
+PlayStateService playStateService = PlayStateService(&server, esp8266React.getSecurityManager());
+
 void setup() {
   // start serial and filesystem
   Serial.begin(SERIAL_BAUD_RATE);
@@ -31,6 +34,7 @@ void setup() {
   lightStateService.begin();
 
   soundsStateService.begin();
+  playStateService.begin();
 
   // start the light service
   lightMqttSettingsService.begin();
