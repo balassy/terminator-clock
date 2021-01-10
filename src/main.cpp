@@ -5,6 +5,8 @@
 #include "sounds/SoundsStateService.h"
 #include "play/PlayStateService.h"
 
+#include "speed-servo.h"
+
 #define SERIAL_BAUD_RATE 115200
 
 AsyncWebServer server(80);
@@ -21,6 +23,27 @@ SoundsStateService soundsStateService = SoundsStateService(&server,
                                                            esp8266React.getFS());
 
 PlayStateService playStateService = PlayStateService(&server, esp8266React.getSecurityManager());
+
+SpeedServo verticalServo;
+SpeedServo horizontalServo;
+
+void setupServos() {
+  verticalServo.attach(D3);
+  verticalServo.moveSlowTo(0);
+  verticalServo.moveSlowTo(30);
+  verticalServo.moveSlowTo(15);
+  verticalServo.moveSlowTo(30);
+  verticalServo.moveSlowTo(0);
+  verticalServo.moveSlowTo(15);
+
+  horizontalServo.attach(D0);
+  horizontalServo.moveSlowTo(0);
+  horizontalServo.moveSlowTo(30);
+  horizontalServo.moveSlowTo(15);
+  horizontalServo.moveSlowTo(30);
+  horizontalServo.moveSlowTo(0);
+  horizontalServo.moveSlowTo(15);
+}
 
 void setup() {
   // start serial and filesystem
@@ -42,6 +65,8 @@ void setup() {
   // start the server
   server.begin();
 
+  setupServos();
+
   Serial.println("Main setup completed.");
 }
 
@@ -49,3 +74,6 @@ void loop() {
   // run the framework's loop function
   esp8266React.loop();
 }
+
+
+
