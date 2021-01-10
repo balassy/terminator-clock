@@ -18,6 +18,10 @@ Lessons learned:
 - The [esp8266-react](https://github.com/rjwats/esp8266-react) is a good starting point, though the build task is quite slow.
 - When you import an existing model into Fusion 360 take your time to aligne it perfectly with your existing reference faces and axes (e.g. origin). A fraction of a millimeter error can be magnified in a few centimeters apart and cause misaligned constraints or break the symmetry.
 
+You can check how the eye moves in [this Youtube video](https://www.youtube.com/watch?v=Tz13K7Pk3AE):
+
+![](./_Photos/youtube.png)
+
 ## Hardware
 
 ![](./_Photos/photo.jpg)
