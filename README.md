@@ -51,7 +51,7 @@ The Git history of this repository shows how I rebranded it to T-800 style.
 
 You can find the 3D printable STL files in the `_3D-Print` folder.
 
-I designed the model with Fusion 360 and also shared the source files in case you want to further enhance them.
+I designed the model with Fusion 360 and also shared the source files in case you want to further enhance them. I shared the same files also on [Thingiverse](https://www.thingiverse.com/thing:4716967).
 
 The eyeball, iris and pupil is based on [Metalnat's Terminator Eye model](https://www.thingiverse.com/thing:984200) on Thingiverse.
 
